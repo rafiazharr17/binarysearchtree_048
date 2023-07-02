@@ -30,5 +30,9 @@ public:
 		newNode->leftchild = NULL; // Buat left child dari new Node ke NULL
 		newNode->rightchild = NULL; // Buat right child dari new Node ke NULL
 
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search(element, parent, currentNode); // Menemukan node yang akan menjadi parent dari Node yang disisipkan
+
 	}
 };
