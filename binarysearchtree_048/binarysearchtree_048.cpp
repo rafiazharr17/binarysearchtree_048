@@ -52,15 +52,19 @@ public:
 
 	void search(string element, Node*& parent, Node*& currentNode) {
 		//Fungsi ini mencari Node saat ini dari Node yang ditenukan serta Node saat ini dari parent
-		currentNode = ROOT;
-		parent = NULL;
-		while ((currentNode != NULL) && (currentNode->info != element))
+		currentNode = ROOT; 
+		parent = NULL; 
+		while ((currentNode != NULL) && (currentNode->info != element)) 
 		{
-			parent = currentNode;
-			if (element < currentNode->info)
-				currentNode = currentNode->leftchild;
+			parent = currentNode; 
+			if (element < currentNode->info) 
+				currentNode = currentNode->leftchild; 
 			else
-				currentNode = currentNode->rightchild;
+				currentNode = currentNode->rightchild; 
 		}
+	}
+
+	void inorder(Node* ptr) {
+
 	}
 };
