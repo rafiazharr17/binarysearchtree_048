@@ -34,5 +34,10 @@ public:
 		Node* currentNode = NULL;
 		search(element, parent, currentNode); // Menemukan node yang akan menjadi parent dari Node yang disisipkan
 
+		if (parent == NULL) //Jika parentnya adalah NULL (Tree is empty)
+		{
+			ROOT = newNode; // Tandai new node sebagai ROOT 
+			return; // Exit
+		}
 	}
 };
