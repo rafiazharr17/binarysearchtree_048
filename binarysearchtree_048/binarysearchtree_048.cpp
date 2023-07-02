@@ -39,5 +39,11 @@ public:
 			ROOT = newNode; // Tandai new node sebagai ROOT 
 			return; // Exit
 		}
+
+		if (element < parent->info) //Jika data field new Node lebih kecil dari parent
+		{
+			parent->leftchild = newNode; // Membuat left child dari parent point ke new Node
+		}
+		
 	}
 };
