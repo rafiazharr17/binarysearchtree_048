@@ -49,4 +49,8 @@ public:
 			parent->rightchild = newNode; // Membuat right child dari parent  ke new Node
 		}
 	}
+
+	void search(string element, Node*& parent, Node*& currentNode) {
+
+	}
 };
